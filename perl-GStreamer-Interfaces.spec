@@ -6,7 +6,7 @@
 %define		pdir	GStreamer
 %define		pnam	Interfaces
 Summary:	Perl gstreamer base plugins bindings
-Summary(pl):	Wi±zania podstawowych wtyczek gstreamer dla Perla
+Summary(pl):	Wi±zania podstawowych wtyczek gstreamera dla Perla
 Name:		perl-GStreamer-Interfaces
 Version:	0.03
 Release:	1
@@ -30,7 +30,7 @@ This module provides Perl access to gstreamer base plugins library.
 
 %description -l pl
 Ten modu³ daje dostêp z poziomu Perla do podstawowych wtyczek
-gstreamer.
+gstreamera.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -50,17 +50,17 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/%{pdir}/%{pnam}/*.pod
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/GStreamer/Interfaces/*.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorarch}/%{pdir}/%{pnam}.pm
-%dir %{perl_vendorarch}/%{pdir}/%{pnam}
-%dir %{perl_vendorarch}/auto/%{pdir}/%{pnam}
-%attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.so
-%{perl_vendorarch}/%{pdir}/%{pnam}/Install
-%{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.bs
+%{perl_vendorarch}/GStreamer/Interfaces.pm
+%dir %{perl_vendorarch}/GStreamer/Interfaces
+%dir %{perl_vendorarch}/auto/GStreamer/Interfaces
+%attr(755,root,root) %{perl_vendorarch}/auto/GStreamer/Interfaces/*.so
+%{perl_vendorarch}/GStreamer/Interfaces/Install
+%{perl_vendorarch}/auto/GStreamer/Interfaces/*.bs
 %{_mandir}/man3/*
