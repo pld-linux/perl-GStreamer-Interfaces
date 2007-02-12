@@ -6,7 +6,7 @@
 %define		pdir	GStreamer
 %define		pnam	Interfaces
 Summary:	Perl gstreamer base plugins bindings
-Summary(pl.UTF-8):   Wiązania podstawowych wtyczek gstreamera dla Perla
+Summary(pl.UTF-8):	Wiązania podstawowych wtyczek gstreamera dla Perla
 Name:		perl-GStreamer-Interfaces
 Version:	0.03
 Release:	1
