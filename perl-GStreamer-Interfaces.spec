@@ -6,7 +6,7 @@
 %define		pdir	GStreamer
 %define		pnam	Interfaces
 Summary:	Perl gstreamer base plugins bindings
-Summary(pl):	Wi±zania podstawowych wtyczek gstreamera dla Perla
+Summary(pl.UTF-8):   WiÄ…zania podstawowych wtyczek gstreamera dla Perla
 Name:		perl-GStreamer-Interfaces
 Version:	0.03
 Release:	1
@@ -28,8 +28,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module provides Perl access to gstreamer base plugins library.
 
-%description -l pl
-Ten modu³ daje dostêp z poziomu Perla do podstawowych wtyczek
+%description -l pl.UTF-8
+Ten moduÅ‚ daje dostÄ™p z poziomu Perla do podstawowych wtyczek
 gstreamera.
 
 %prep
