@@ -8,12 +8,12 @@
 Summary:	Perl gstreamer base plugins bindings
 Summary(pl.UTF-8):	Wiązania podstawowych wtyczek gstreamera dla Perla
 Name:		perl-GStreamer-Interfaces
-Version:	0.05
+Version:	0.06
 Release:	1
 License:	LGPL v2.1+
 Group:		Development/Languages/Perl
 Source0:	http://dl.sourceforge.net/gtk2-perl/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7d49145522067438a17dfbf32fe950ee
+# Source0-md5:	aa9583a484fa6829935b360887ecda45
 URL:		http://gtk2-perl.sourceforge.net/
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10.9
 BuildRequires:	perl-ExtUtils-Depends >= 0.205
