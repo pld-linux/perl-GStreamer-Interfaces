@@ -12,7 +12,7 @@ Version:	0.06
 Release:	2
 License:	LGPL v2.1+
 Group:		Development/Languages/Perl
-Source0:	http://dl.sourceforge.net/gtk2-perl/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/gtk2-perl/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	aa9583a484fa6829935b360887ecda45
 URL:		http://gtk2-perl.sourceforge.net/
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10.9
@@ -52,8 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/GStreamer/Interfaces/*.pod
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -62,8 +60,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc NEWS README
 %{perl_vendorarch}/GStreamer/Interfaces.pm
 %dir %{perl_vendorarch}/GStreamer/Interfaces
-%dir %{perl_vendorarch}/auto/GStreamer/Interfaces
-%attr(755,root,root) %{perl_vendorarch}/auto/GStreamer/Interfaces/*.so
 %{perl_vendorarch}/GStreamer/Interfaces/Install
-%{perl_vendorarch}/auto/GStreamer/Interfaces/*.bs
+%dir %{perl_vendorarch}/auto/GStreamer/Interfaces
+%{perl_vendorarch}/auto/GStreamer/Interfaces/Interfaces.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/GStreamer/Interfaces/Interfaces.so
 %{_mandir}/man3/GStreamer::Interfaces*.3pm*
