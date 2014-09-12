@@ -62,6 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/GStreamer/Interfaces
 %{perl_vendorarch}/GStreamer/Interfaces/Install
 %dir %{perl_vendorarch}/auto/GStreamer/Interfaces
-%{perl_vendorarch}/auto/GStreamer/Interfaces/Interfaces.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/GStreamer/Interfaces/Interfaces.so
 %{_mandir}/man3/GStreamer::Interfaces*.3pm*
