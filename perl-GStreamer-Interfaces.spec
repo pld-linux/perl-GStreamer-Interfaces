@@ -21,6 +21,7 @@ BuildRequires:	perl-GStreamer-devel >= 0.09
 BuildRequires:	perl-Glib >= 1.180
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 Requires:	perl-GStreamer >= 0.09
 Requires:	perl-Glib >= 1.180
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
